@@ -34,9 +34,10 @@ public class Task2_a {
         //search for the longest list
         for (String line: lines){
             if (line.length()==max){
-                System.out.println(line); //prints all valid lines
-                System.out.println(lines.indexOf(line)); //index of the longest line
-                //if there are identical lines - returns index of the first line with that content
+                System.out.println(line); //prints valid line
+                System.out.println(lines.indexOf(line)); //index of the line
+                //break; uncomment if you want to get the first valid line
+                //if there are identical lines - prints index of the first line with that content
             }
         }
         System.out.println(max);
